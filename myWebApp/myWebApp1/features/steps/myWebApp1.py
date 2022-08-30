@@ -13,7 +13,7 @@ def step_impl(context):
 @when('inform incorrect user and password')
 def step_impl(context):
     form = context.browser.find_element(value='login-form')
-    context.browser.find_element(value='id_username').send_keys("edprata1")
+    context.browser.find_element(value='id_username').send_keys("alberto")
     context.browser.find_element(value='id_password').send_keys("senha")
     time.sleep(3)
     form.submit()
@@ -29,8 +29,8 @@ def step_impl(context):
 @when('inform correct user and password')
 def step_impl(context):
     form = context.browser.find_element(value='login-form')
-    context.browser.find_element(value='id_username').send_keys("edprata")
-    context.browser.find_element(value='id_password').send_keys("teste")
+    context.browser.find_element(value='id_username').send_keys("alberto")
+    context.browser.find_element(value='id_password').send_keys("django")
     time.sleep(3)
     form.submit()
     time.sleep(3)
